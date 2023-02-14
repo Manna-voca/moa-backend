@@ -226,6 +226,7 @@ public class GroupService {
         Group group = userGroup.getGroup();
         userGroupRepository.delete(userGroup);
 
+        
         return GroupInfoResponseDto.from(group);
     }
 }
